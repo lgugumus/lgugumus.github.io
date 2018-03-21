@@ -11,7 +11,7 @@ $(document).ready(function() {
             success: function(response){
                 if(response.status == "success"){
                     alert("We received your submission, thank you!");
-                    window.location.replace("index.html");
+                    window.location.href = "index.html";
                 }else{
                     alert("An error occured: " + response.message);
                 }
