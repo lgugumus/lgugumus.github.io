@@ -10,7 +10,6 @@ $(document).ready(function() {
             data: $(this).serialize(),
             success: function(response){
                 if(response.status == "success"){
-                    alert("We received your submission, thank you!");
                     window.location.href = "index.html";
                 }else{
                     alert("An error occured: " + response.message);
